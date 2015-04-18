@@ -27,10 +27,8 @@ def thread_jobs(zips):
         
     for t in threads:
         t.join()
-
-    for t in threads:
         total += t.total_jobs
-    
+
     return total
 
 
